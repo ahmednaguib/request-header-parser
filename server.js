@@ -15,7 +15,6 @@ mongo.connect(process.env.MONGO_URI, function (err, db) {
    } else {
       console.log('Successfully connected to MongoDB.');
    }
-
    app.use('/public', express.static(process.cwd() + '/public'));
    app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 
